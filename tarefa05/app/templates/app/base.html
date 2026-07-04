@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Blog | {% block "title" %} {% endblock%}</title>
+</head>
+<body>
+    <header>
+<h1><a href="{% url 'index' %}" style="text-decoration: none; color: black;">Meu Blog</a></h1>
+        <h2>Para Series</h2>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>Tentativa de Autor: Xulio Miguel</p>
+    </footer>
+</body>
+</html>
